@@ -9,7 +9,7 @@ namespace Task_3
         const int NumberOfType = 1;
         private static ulong countBuilding = 1;
         public string Adress { get; set; }
-        public string Number { get; private set; }
+        public string Number { get; }
         public Building(DateTime year)
         {
             Number = ClassHelper.GetNumber(NumberOfType, countBuilding++, year);

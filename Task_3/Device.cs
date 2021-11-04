@@ -8,7 +8,7 @@ namespace Task_3
     {
         const int NumberOfType = 3;
         private static ulong countDevice = 1;
-        public string Number { get; private set; }
+        public string Number { get; }
         public Device(DateTime year)
         {
             Number = ClassHelper.GetNumber(NumberOfType, countDevice++, year);

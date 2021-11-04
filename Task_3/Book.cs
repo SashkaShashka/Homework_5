@@ -8,9 +8,9 @@ namespace Task_3
     {
         const int NumberOfType = 13;
         private static ulong countBook = 1;
-        public string Number { get; private set; }
+        public string Number { get; }
         public string Name { get; set; }
-        public string Authors { get; set; } //наверное лучше список строк, но решил не заморачиваться
+        public List<string> Authors { get; set; }
         public DateTime YearPublication { get; set; }
         public Book(DateTime year)
         {
