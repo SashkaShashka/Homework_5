@@ -10,9 +10,9 @@ namespace Task_3
         public static string GetNumber(uint type, ulong numberOfType, DateTime year)
         {
             if (type.ToString().Length > 2)
-                throw new ArgumentException("Тип должен состоять не большее чем из двух символов");
+                throw new ArgumentException("Тип должен состоять не более, чем из двух символов");
             if (numberOfType.ToString().Length > 4)
-                throw new ArgumentException("Тип должен состоять не большее чем из четырех символов");
+                throw new ArgumentException("Тип должен состоять не более, чем из четырех символов");
             StringBuilder sb = new StringBuilder();
             sb.Append(type.ToString("00")+'-');
             sb.Append(numberOfType.ToString("0000") + '-');
